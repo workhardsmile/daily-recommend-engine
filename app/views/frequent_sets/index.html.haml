@@ -1,0 +1,27 @@
+%h1 Listing frequent_sets
+
+%table
+  %tr
+    %th Name
+    %th Surport level
+    %th Last sn
+    %th Type
+    %th Date label
+    %th
+    %th
+    %th
+
+  - @frequent_sets.each do |frequent_set|
+    %tr
+      %td= frequent_set.name
+      %td= frequent_set.surport_level
+      %td= frequent_set.last_sn
+      %td= frequent_set.type
+      %td= frequent_set.date_label
+      %td= link_to 'Show', frequent_set
+      %td= link_to 'Edit', edit_frequent_set_path(frequent_set)
+      %td= link_to 'Destroy', frequent_set, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Frequent set', new_frequent_set_path

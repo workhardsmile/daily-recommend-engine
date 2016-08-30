@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @food.name
+%p
+  %b Price:
+  = @food.price
+%p
+  %b Recommend time:
+  = @food.recommend_time
+%p
+  %b Food url:
+  = @food.food_url
+%p
+  %b Image url:
+  = @food.image_url
+%p
+  %b Restaurant:
+  = @food.restaurant_id
+
+= link_to 'Edit', edit_food_path(@food)
+\|
+= link_to 'Back', foods_path

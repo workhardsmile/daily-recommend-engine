@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @search_key.name
+%p
+  %b Sqls:
+  = @search_key.sqls
+%p
+  %b Params:
+  = @search_key.params
+%p
+  %b Type:
+  = @search_key.type
+%p
+  %b Comment:
+  = @search_key.comment
+
+= link_to 'Edit', edit_search_key_path(@search_key)
+\|
+= link_to 'Back', search_keys_path

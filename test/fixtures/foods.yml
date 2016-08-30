@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  price: MyString
+  recommend_time: 1
+  food_url: MyString
+  image_url: MyString
+  restaurant_id: 1
+
+two:
+  name: MyString
+  price: MyString
+  recommend_time: 1
+  food_url: MyString
+  image_url: MyString
+  restaurant_id: 1

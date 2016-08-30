@@ -1,0 +1,27 @@
+%h1 Listing search_keys
+
+%table
+  %tr
+    %th Name
+    %th Sqls
+    %th Params
+    %th Type
+    %th Comment
+    %th
+    %th
+    %th
+
+  - @search_keys.each do |search_key|
+    %tr
+      %td= search_key.name
+      %td= search_key.sqls
+      %td= search_key.params
+      %td= search_key.type
+      %td= search_key.comment
+      %td= link_to 'Show', search_key
+      %td= link_to 'Edit', edit_search_key_path(search_key)
+      %td= link_to 'Destroy', search_key, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Search key', new_search_key_path

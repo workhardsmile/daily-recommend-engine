@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  type: 
+  scores: MyString
+  score_times: MyString
+  location: MyString
+  address: MyString
+  telephone: MyString
+  price: MyString
+  level: MyString
+  shop_url: MyString
+  image_url: MyString
+  comment: MyText
+
+two:
+  name: MyString
+  type: 
+  scores: MyString
+  score_times: MyString
+  location: MyString
+  address: MyString
+  telephone: MyString
+  price: MyString
+  level: MyString
+  shop_url: MyString
+  image_url: MyString
+  comment: MyText

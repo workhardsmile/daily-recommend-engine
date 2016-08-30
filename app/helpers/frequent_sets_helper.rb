@@ -1,0 +1,2 @@
+module FrequentSetsHelper
+end

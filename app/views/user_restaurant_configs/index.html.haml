@@ -1,0 +1,25 @@
+%h1 Listing user_restaurant_configs
+
+%table
+  %tr
+    %th User
+    %th Restaurant
+    %th Score
+    %th Commet
+    %th
+    %th
+    %th
+
+  - @user_restaurant_configs.each do |user_restaurant_config|
+    %tr
+      %td= user_restaurant_config.user_id
+      %td= user_restaurant_config.restaurant_id
+      %td= user_restaurant_config.score
+      %td= user_restaurant_config.commet
+      %td= link_to 'Show', user_restaurant_config
+      %td= link_to 'Edit', edit_user_restaurant_config_path(user_restaurant_config)
+      %td= link_to 'Destroy', user_restaurant_config, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New User restaurant config', new_user_restaurant_config_path

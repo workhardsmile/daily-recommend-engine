@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @user_restaurant_config.user_id
+%p
+  %b Restaurant:
+  = @user_restaurant_config.restaurant_id
+%p
+  %b Score:
+  = @user_restaurant_config.score
+%p
+  %b Commet:
+  = @user_restaurant_config.commet
+
+= link_to 'Edit', edit_user_restaurant_config_path(@user_restaurant_config)
+\|
+= link_to 'Back', user_restaurant_configs_path

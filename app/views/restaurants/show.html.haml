@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @restaurant.name
+%p
+  %b Type:
+  = @restaurant.type
+%p
+  %b Scores:
+  = @restaurant.scores
+%p
+  %b Score times:
+  = @restaurant.score_times
+%p
+  %b Location:
+  = @restaurant.location
+%p
+  %b Address:
+  = @restaurant.address
+%p
+  %b Telephone:
+  = @restaurant.telephone
+%p
+  %b Price:
+  = @restaurant.price
+%p
+  %b Level:
+  = @restaurant.level
+%p
+  %b Shop url:
+  = @restaurant.shop_url
+%p
+  %b Image url:
+  = @restaurant.image_url
+%p
+  %b Comment:
+  = @restaurant.comment
+
+= link_to 'Edit', edit_restaurant_path(@restaurant)
+\|
+= link_to 'Back', restaurants_path

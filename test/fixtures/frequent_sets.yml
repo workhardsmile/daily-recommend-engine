@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  surport_level: 1
+  last_sn: MyString
+  type: 
+  date_label: MyString
+
+two:
+  name: MyString
+  surport_level: 1
+  last_sn: MyString
+  type: 
+  date_label: MyString

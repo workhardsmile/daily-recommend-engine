@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @frequent_set.name
+%p
+  %b Surport level:
+  = @frequent_set.surport_level
+%p
+  %b Last sn:
+  = @frequent_set.last_sn
+%p
+  %b Type:
+  = @frequent_set.type
+%p
+  %b Date label:
+  = @frequent_set.date_label
+
+= link_to 'Edit', edit_frequent_set_path(@frequent_set)
+\|
+= link_to 'Back', frequent_sets_path

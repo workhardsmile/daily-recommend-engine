@@ -1,0 +1,41 @@
+%h1 Listing restaurants
+
+%table
+  %tr
+    %th Name
+    %th Type
+    %th Scores
+    %th Score times
+    %th Location
+    %th Address
+    %th Telephone
+    %th Price
+    %th Level
+    %th Shop url
+    %th Image url
+    %th Comment
+    %th
+    %th
+    %th
+
+  - @restaurants.each do |restaurant|
+    %tr
+      %td= restaurant.name
+      %td= restaurant.type
+      %td= restaurant.scores
+      %td= restaurant.score_times
+      %td= restaurant.location
+      %td= restaurant.address
+      %td= restaurant.telephone
+      %td= restaurant.price
+      %td= restaurant.level
+      %td= restaurant.shop_url
+      %td= restaurant.image_url
+      %td= restaurant.comment
+      %td= link_to 'Show', restaurant
+      %td= link_to 'Edit', edit_restaurant_path(restaurant)
+      %td= link_to 'Destroy', restaurant, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Restaurant', new_restaurant_path
